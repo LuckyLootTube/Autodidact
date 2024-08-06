@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Cyclemon / Shop</title>
+<link rel="icon" type="image/png" href="../images/fav.png" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../scripts/jquery.js"></script>
+<script type="text/javascript" src="../scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="jquery.slides.min.js"></script>
+<link rel="stylesheet" type="text/css" href="shadowbox-3.0.3/shadowbox.css">
+<script type="text/javascript" src="shadowbox-3.0.3/shadowbox.js"></script>
+<script type="text/javascript">
+
+Shadowbox.init({
+
+players:    ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv']
+
+});
+</script>
+<script>
+if (window.innerWidth < 1024){
+$(location).attr('href', 'http://www.cyclemon.com/mobile/index.html');
+}
+$(document).ready(function(){
+$('#know,#nav li a,#exp, #part2 a').click(function(){
+                var el = $(this).attr('href');
+                var elWrapped = $(el);
+                scrollToDiv(elWrapped,40);
+                return false;
+            });
+
+            function scrollToDiv(element,navheight){
+                var offset = element.offset();
+                var offsetTop = offset.top;
+                var totalScroll = offsetTop - $("header").outerHeight() + "px";
+
+                $('body,html').animate({scrollTop: totalScroll}, 700);
+
+            }
+			$("#n1").css({opacity:'1'}, 1);
+			
+			$("#n1").hover(function(){
+       		$("#b1").fadeToggle(0.5);
+	  });
+	  		$("#n2").hover(function(){
+       		$("#b2").fadeToggle(0.5);
+	  });
+			$("#n3").hover(function(){
+       		$("#b3").fadeToggle(0.5);
+	  });
+	  		$("#gauche #bout").mouseover(function(){
+       		$("#gauche #bout").animate({opacity:'0.8'}, 'fast');
+	  });
+	  		$("#gauche #bout").mouseleave(function(){
+       		$("#gauche #bout").animate({opacity:'1'}, 'fast');
+	  });
+});
+</script>
+</head>
+
+<body>
+
+<div id="menu">
+    <a id="exp" href="../index.html"><img alt="experiment" src="images/expb.png"/></a>
+    <a id="know" href="../knowm/knowm.html"><img alt="know more" src="images/knowb.png"/></a>
+    <a id="shop" href="#"><img alt="shop section" src="images/shopb.png"/></a>
+    </div>
+
+<ul id="nav">
+    	<div id="nom">
+        <li><a id="b1" href="#part2" title="Next Section"><img src="images/screenprint.png" alt="Link" /></a></li>
+	    <li><a id="b2" href="#part3" title="Next Section"><img src="images/postersb.png" alt="Link" /></a></li>
+        </div>
+    	<li><a id="n1" href="#part2" title="Next Section"><img src="../images/button2.png" alt="Link" /></a></li>
+	    <li><a id="n2" href="#part3" title="Next Section"><img src="../images/button2.png" alt="Link" /></a></li>
+	</ul>
+
+ <div id="share">
+    <a href="#"><img alt="Partage" src="images/sharb.png"/></a>
+    <div id="content">
+    <li>
+    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.cyclemon.com&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:95px; height:20px;" allowTransparency="true"></iframe><style>.fbook{position: absolute; color:#ddd; top:10px; font-size:10px;}</style></li>
+    <li><a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="cyclemon" style="width:88px">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+    </div>
+    </div>
+
+<div id="part2">
+<div id="infos">
+<div id="gauche">
+<img alt="screen prints" src="images/screen.png" />
+<p>Take a look at our wonderful 30"x40" numbered<br/> and stamped silkscreens. Each design is printed<br/> in 5 different handmade colors with a non-toxic technique, on a Fabriano© Rosaspina<br/> white paper (285gr),  and for only 40 euros!.</p>
+<a id="bout" href="mailto:cycle.lemon@gmail.com?Subject=Cyclemon%20Poster"><img alt="order now" style="box-shadow:0 0 2px #444444; margin-bottom:3px;" src="images/order.jpg" /></a>
+<p>You can also check our full collection of digital prints, <a style="opacity:1" href="#part3">available here</a>.</p>
+</div>
+<div id="droite">
+<ui class="container">
+	  <li><a href="images/tandem.jpg" rel="shadowbox[1]"><img src="images/tandempet.jpg" alt="tandem"></a><a href="images/tandem1.jpg" rel="shadowbox[1]"></a></li>
+      <li><a href="images/weirdo.jpg" rel="shadowbox[2]"><img src="images/weirdopet.jpg" alt="weirdo"></a><a href="images/weirdo1.jpg" rel="shadowbox[2]"></a></li>
+      <li><a href="images/hipster.jpg" rel="shadowbox[3]"><img src="images/hipsterpet.jpg" alt="hipster"></a><a href="images/hipster1.jpg" rel="shadowbox[3]"></a></li>
+      <li><a href="images/gangsta.jpg" rel="shadowbox[4]"><img src="images/gangstapet.jpg" alt="gangsta"></a><a href="images/gangsta1.jpg" rel="shadowbox[4]"></a></li>
+    </ul></div>
+  </div>
+</div>
+</div>
+
+<div id="part3">
+<div id="titre"><img alt="poster" src="images/poster.png">
+</div>
+<div id="society">
+<ul id="liens">
+<li><a href="http://society6.com/ThomasPomarelle/Night-Rider-IrY_Print" target="_blank"><img alt="Night Rider" src="images/night.jpg"><br/><h2>Night Rider</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Swagger-WsS_Print" target="_blank"><img alt="swagger" src="images/swa.jpg"><br/><h2>Swagger</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Tandem-8um_Print" target="_blank"><img alt="tandem" src="images/tan.jpg"><br/><h2>Tandem</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Grand-Pa_Print" target="_blank"><img alt="grand pa" src="images/gra.jpg"><br/><h2>Grand'pa</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Baby-Doll-sOw_Print" target="_blank"><img alt="baby doll" src="images/bab.jpg"><br/><h2>Baby Doll</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Cougar-gGo_Print" target="_blank"><img alt="cougar" src="images/cou.jpg"><br/><h2>Cougar</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Freestyler_Print" target="_blank"><img alt="freestyler" src="images/fre.jpg"><br/><h2>Freestyler</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Traveller-GW2_Print" target="_blank"><img alt="traveller" src="images/tra.jpg"><br/><h2>Traveller</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Weirdo-ww5_Print" target="_blank"><img alt="weirdo" src="images/we.jpg"><br/><h2>Weirdo</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Hipster-usH_Print" target="_blank"><img alt="hipster" src="images/hip.jpg"><br/><h2>Hipster</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Runner-nPw_Print" target="_blank"><img alt="runner" src="images/run.jpg"><br/><h2>Runner</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Vintage-Guy_Print" target="_blank"><img alt="vintage guy" src="images/vin.jpg"><br/><h2>Vintage Guy</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Gangsta_Print" target="_blank"><img alt="gangsta" src="images/gan.jpg"><br/><h2>Gangsta</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Lil-Gangsta_Print" target="_blank"><img alt="lil gangsta" src="images/lil.jpg"><br/><h2>Lil' Gangsta</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Rigid-Guy_Print" target="_blank"><img alt="rigid guy" src="images/rig.jpg"><br/><h2>Rigid Guy</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Warrior-mDf_Print" target="_blank"><img alt="warrior" src="images/war.jpg"><br/><h2>Warrior</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Lazy-Guy_Print" target="_blank"><img alt="lazy guy" src="images/laz.jpg"><br/><h2>Lazy Guy</h2><hr/><p>From 18$</p></a></li>
+<li><a href="http://society6.com/ThomasPomarelle/Fake-skB_Print" target="_blank"><img alt="fake" src="images/fak.jpg"><br/><h2>Fake</h2><hr/><p>From 18$</p></a></li>
+
+</ul>
+</div>
+<div id="copyr">
+<p>© CYCLEMON 2013 — All rights reserved</p>
+</div>
+</div>
+
+
+<script>
+	$("#tom").mouseover(function() {
+		$("#tom").animate({opacity:'1'}, 150);
+		$("#rom").animate({opacity:'0.5'}, 150);
+		});
+	$("#tom").mouseleave(function() {
+		$("#tom").animate({opacity:'0.7'}, 150);
+		$("#rom").animate({opacity:'0.7'}, 150);
+		});
+
+	$("#rom").mouseover(function() {
+		$("#rom").animate({opacity:'1'}, 150);
+		$("#tom").animate({opacity:'0.5'}, 150);
+		});
+	$("#rom").mouseleave(function() {
+		$("#rom").animate({opacity:'0.7'}, 150);
+		$("#tom").animate({opacity:'0.7'}, 150);
+		});
+
+
+	   $("#share").hover(function() {
+  $("#content").toggle('slide');
+  $("#share a").animate({opacity:'1'}, 1);
+});
+	$("#share").mouseleave(function() {
+	$("#share a").animate({opacity:'0.6'}, 1);
+	
+	});
+	
+	$(window).scroll(function(){
+		var divHeight = $(window).height()*1;	
+		var divIndex = $(window).scrollTop() / divHeight;
+		
+				console.log(divIndex);
+
+		
+$("#n1").append(function() {
+            
+			if (divIndex < 1) {
+				$("#n1").css({opacity:'1'},1);}
+			else {				
+			$("#n1").css({opacity:'0.2'},1);}			
+			
+		});
+		
+		$("#n2").append(function() {
+            
+			if (divIndex >= 1 && divIndex) {
+				$("#n2").css({opacity:'1'},1);}
+			else {				
+			$("#n2").css({opacity:'0.2'},1);}			
+			
+		});
+		
+		
+		
+    $(function() {
+      $('#slides').slidesjs({
+		   pagination: {
+      active: false},
+        width: 580,
+        height: 422,
+        navigation: false
+	});
+	});
+	});
+	
+	   </script>
+</body>
+</html>

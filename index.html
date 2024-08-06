@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="Cyclemon / Experiment" name="description">
+<meta content="cyclemon, cycle, velo, lemon, tour, de, france, cyclisme, roue, roues, cycles, motion, design, graphic, graphisme, illu, illustration, pignon, fixe, hipster, grandpa, gangsta" name="keywords">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cyclemon / Experiment</title>
+<link rel="icon" type="image/png" href="images/fav.png" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bouton.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+ 
+
+
+	<script type="text/javascript">
+				if (window.innerWidth <= 1024){
+$(location).attr('href', 'http://www.cyclemon.com/mobile/');
+
+				}
+$(window).load(function(){	
+	$('body, html').scrollTop(0);
+	$("#loader").fadeToggle({display:"none"}, "slow");
+});
+</script>
+<script type="text/javascript">
+
+$(document).ready(function(){	
+		
+		
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#traveler').parallax("50%", 0.5);
+	//$('.bg').parallax("50%", "50%", 0.5, true);
+	$('#third').parallax("50%", 0.5);
+	$('#hipster').parallax("50%", 0.5);
+	$('#fond4').parallax("50%", 0.5);
+	$('#fond5').parallax("50%", 0.5);
+	$('#fond6').parallax("50%", 0.5);
+	$('#fond7').parallax("50%", 0.5);
+	$('#fond8').parallax("50%", 0.5);
+	$('#fond9').parallax("50%", 0.5);
+	$('#fond10').parallax("50%", 0.5);
+	$('#fond11').parallax("50%", 0.5);
+	$('#fond12').parallax("50%", 0.5);
+	$('#fond13').parallax("50%", 0.5);
+	$('#fond14').parallax("50%", 0.5);
+	$('#fond15').parallax("50%", 0.5);
+	$('#fond16').parallax("50%", 0.5);
+	$('#fond17').parallax("50%", 0.5);
+	$('#fond19').parallax("50%", 0.5);
+	
+	
+	$('#intro a,#nav li a,#exp,#traveler a').click(function(){
+                var el = $(this).attr('href');
+                var elWrapped = $(el);
+                scrollToDiv(elWrapped,40);
+                return false;
+            });
+
+            function scrollToDiv(element,navheight){
+                var offset = element.offset();
+                var offsetTop = offset.top;
+                var totalScroll = offsetTop - $("header").outerHeight() + "px";
+
+                $('body,html').animate({scrollTop: totalScroll}, 700);
+
+            }
+	
+		$("#n1").css({opacity:'1'}, 1);
+			
+			$("#n1").hover(function(){
+       		$("#b1").fadeToggle(0.5);
+	  });
+	  		$("#n2").hover(function(){
+       		$("#b2").fadeToggle(0.5);
+	  });
+			$("#n3").hover(function(){
+       		$("#b3").fadeToggle(0.5);
+	  });
+	  		$("#n4").hover(function(){
+       		$("#b4").fadeToggle(0.5);
+	  });
+	  		$("#n5").hover(function(){
+       		$("#b5").fadeToggle(0.5);
+	  });
+			$("#n6").hover(function(){
+       		$("#b6").fadeToggle(0.5);
+	  });
+	  		$("#n7").hover(function(){
+       		$("#b7").fadeToggle(0.5);
+	  });
+	  		$("#n8").hover(function(){
+       		$("#b8").fadeToggle(0.5);
+	  });
+	  		$("#n9").hover(function(){
+       		$("#b9").fadeToggle(0.5);
+	  });
+	  		$("#n10").hover(function(){
+       		$("#b10").fadeToggle(0.5);
+	  });	
+	  		$("#n11").hover(function(){
+       		$("#b11").fadeToggle(0.5);
+	  });	
+	  		$("#n12").hover(function(){
+       		$("#b12").fadeToggle(0.5);
+	  });	
+	  		$("#n13").hover(function(){
+       		$("#b13").fadeToggle(0.5);
+	  });	
+	  		$("#n14").hover(function(){
+       		$("#b14").fadeToggle(0.5);
+	  });	
+	  		$("#n15").hover(function(){
+       		$("#b15").fadeToggle(0.5);
+	  });	
+	  		$("#n16").hover(function(){
+       		$("#b16").fadeToggle(0.5);
+	  });	
+	  		$("#n17").hover(function(){
+       		$("#b17").fadeToggle(0.5);
+	  });	
+	  		$("#n18").hover(function(){
+       		$("#b18").fadeToggle(0.5);
+	  });
+	  		$("#n19").hover(function(){
+       		$("#b19").fadeToggle(0.5);
+	  });
+	  		$("#n20").hover(function(){
+       		$("#b20").fadeToggle(0.5);
+	  });
+	  
+/*	  $("#share").hover(function(){
+      $("#content").slideToggle(100)
+	      $("#share a").animate({opacity:'1'}, 1);
+
+  });
+  $("#share").mouseleave(function() {
+	  	   $("#share a").animate({opacity:'0.4'}, 1);
+  });*/
+  
+	 
+  	
+        });
+
+
+</script>
+
+</head>
+
+
+<body>
+
+<div id="loader">
+<div id="load">
+<img alt="roue" src="images/load.gif"/>
+<div id="cl"> <img alt="lettreC" src="images/clog.png"/></div>
+</div>
+</div>
+
+<!-- facebook like button -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div id="menu">
+    <a id="exp" href="#intro"><img alt="experiment" src="images/experiment.png"/></a>
+    <a id="know" href="knowm/knowm.html"><img alt="know more" src="images/know.png"/></a>
+    <a id="shop" href="shop/index.html"><img alt="shop section" src="shop/images/shop.png"/></a>
+
+    </div>
+    
+    <div id="share">
+    <a href="#"><img alt="share button" src="images/share.png"/></a>
+    <div id="content">
+    <li>
+    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.cyclemon.com&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:95px; height:20px;" allowTransparency="true"></iframe><style>.fbook{position: absolute; color:#ddd; top:10px; font-size:10px;}</style></style></li>
+    <li><a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="cyclemon" style="width:88px">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+    </div>
+    </div>
+    
+    
+	<ul id="nav">
+    	<div id="nom">
+        <li><a id="b1" href="#intro" title="Next Section"><img src="images/title1.png" alt="Link" /></a></li>
+	    <li><a id="b19"	href="#fond19" title="Next Section"><img src="images/title20.png" alt="Link" /></a></li>
+	    <li><a id="b2" href="#traveler" title="Next Section"><img src="images/title2.png" alt="Link" /></a></li>
+	    <li><a id="b3" href="#third" title="Next Section"><img src="images/title3.png" alt="Link" /></a></li>
+	    <li><a id="b4" href="#hipster" title="Next Section"><img src="images/title4.png" alt="Link" /></a></li>
+	    <li><a id="b5" href="#fond4" title="Next Section"><img src="images/title5.png" alt="Link" /></a></li>
+	    <li><a id="b6"	href="#fond5" title="Next Section"><img src="images/title6.png" alt="Link" /></a></li>
+	    <li><a id="b7"	href="#fond6" title="Next Section"><img src="images/title7.png" alt="Link" /></a></li>
+	    <li><a id="b8"	href="#fond7" title="Next Section"><img src="images/title8.png" alt="Link" /></a></li>
+	    <li><a id="b9"	href="#fond8" title="Next Section"><img src="images/title9.png" alt="Link" /></a></li>
+	    <li><a id="b10"	href="#fond9" title="Next Section"><img src="images/title10.png" alt="Link" /></a></li>
+	    <li><a id="b11"	href="#fond10" title="Next Section"><img src="images/title11.png" alt="Link" /></a></li>
+	    <li><a id="b12"	href="#fond11" title="Next Section"><img src="images/title12.png" alt="Link" /></a></li>
+	    <li><a id="b13"	href="#fond12" title="Next Section"><img src="images/title13.png" alt="Link" /></a></li>
+	    <li><a id="b14"	href="#fond13" title="Next Section"><img src="images/title14.png" alt="Link" /></a></li>
+	    <li><a id="b15"	href="#fond14" title="Next Section"><img src="images/title15.png" alt="Link" /></a></li>
+	    <li><a id="b16"	href="#fond15" title="Next Section"><img src="images/title16.png" alt="Link" /></a></li>
+	    <li><a id="b17"	href="#fond16" title="Next Section"><img src="images/title17.png" alt="Link" /></a></li>
+	    <li><a id="b18"	href="#fond17" title="Next Section"><img src="images/title18.png" alt="Link" /></a></li>
+	    <li><a id="b20"	href="footer" title="Next Section"><img src="images/title19.png" alt="Link" /></a></li>
+        </div>
+    	<li><a id="n1" href="#intro" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n19" href="#fond19" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n2" href="#traveler" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n3" href="#third" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n4" href="#hipster" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n5" href="#fond4" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n6" href="#fond5" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n7" href="#fond6" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n8" href="#fond7" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n9" href="#fond8" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n10" href="#fond9" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n11" href="#fond10" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n12" href="#fond11" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n13" href="#fond12" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n14" href="#fond13" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n15" href="#fond14" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n16" href="#fond15" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n17" href="#fond16" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n18" href="#fond17" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	    <li><a id="n20" href="footer" title="Next Section"><img src="images/button.png" alt="Link" /></a></li>
+	</ul>
+	
+	<div id="intro">
+    <a href="#fond19"><img alt="fleche" src="images/fleche2.png"></a>
+		
+	</div>
+    
+     <div alt="you're a night rider" id="fond19">
+       	<a href="https://vimeo.com/71045197" target="_blank"><p>Watch the <br/>Trailer</p></a>
+        <br/><hr/><br/>
+       	<a href="http://revolights.com" target="_blank"><img alt="logo revolights" src="images/revo.png"/></a>
+		<div class="story"><div class="bg"></div>
+	    </div> 
+	    
+	</div>
+     
+	<div alt="you're a traveler" id="traveler">
+		<div class="story"><div class="bg"></div>
+	    </div> </div>
+	    
+       
+        
+	</div>
+	<div alt="you're a weirdo" id="third">
+		<div class="story"><div class="bg"></div>
+	    	
+	    </div> 
+	</div> 
+	
+	<div alt="you're a hipster" id="hipster">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a swagger" id="fond4">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a vintage guy" id="fond5">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a grand pa" id="fond6">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a tandem" id="fond7">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a baby doll" id="fond8">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a cougar" id="fond9">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a freestyler" id="fond10">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a gangsta" id="fond11">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a lil gangsta" id="fond12">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a runner" id="fond13">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a rigid guy" id="fond14">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a warrior" id="fond15">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a lazy guy" id="fond16">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       <div alt="you're a fake" id="fond17">
+		<div class="story"><div class="bg"></div>
+        
+       </div>
+       </div>
+       
+       
+       
+<footer>
+<div id="fond18">
+<img alt="did you enjoy" src="images/fin1.png"/>
+<hr/>
+<a href="shop/index.html"><img alt="shop link" src="images/fin2.png"/></a>
+<hr/>
+<a href="knowm/knowm.html"><img alt="know more link" src="images/fin3.png"/></a>
+</div>
+<div class="story">
+<p>© CYCLEMON 2013 — All rights reserved</p>
+</div></footer>
+ 
+       
+       <script>
+	   $("#share").hover(function() {
+  $("#content").toggle('slide');
+  $("#share a").animate({opacity:'1'}, 1);
+});
+	$("#share").mouseleave(function() {
+	$("#share a").animate({opacity:'0.4'}, 1);
+	
+	});
+	$("#fond19 p").hover(function() {
+  $("#fond19 p").animate({opacity:'0.6'}, "fast");
+});
+	$("#fond19 p").mouseout(function() {
+	$("#fond19 p").animate({opacity:'1'}, 100);
+	
+	});
+$(function () {
+	var element = $("#cl");
+    (function(){
+        element
+            
+            .animate({ opacity:'0.4'},"slow")
+            .animate({ opacity:'0.8'},"slow",arguments.callee)
+            
+    }());
+});
+
+	   </script>
+</body>
+
+</html>

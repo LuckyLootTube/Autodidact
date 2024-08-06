@@ -604,6 +604,7 @@ img{
 	min-width: 980px;
 	overflow: auto;
 	width: 980px;
+		text-align:center;
 }
 
 .story .float-left, .story .float-right{

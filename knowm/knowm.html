@@ -11,7 +11,7 @@
 <script src="jquery.slides.min.js"></script>
 <script>
 if (window.innerWidth < 1024){
-$(location).attr('href', 'http://www.cyclemon.com/mobile/index.html');
+$(location).attr('href', 'https://www.luckyloottube.me/mobile/index.html');
 }
 $(document).ready(function(){
 $('#know,#nav li a,#exp').click(function(){
@@ -68,15 +68,49 @@ $('#know,#nav li a,#exp').click(function(){
 	    <li><a id="n3" href="#part3" title="Next Section"><img src="../images/button2.png" alt="Link" /></a></li>
 	</ul>
 
- <div id="share">
-    <a href="#"><img alt="Partage" src="../images/share.png"/></a>
-    <div id="content">
-    <li>
-    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.cyclemon.com&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:95px; height:20px;" allowTransparency="true"></iframe><style>.fbook{position: absolute; color:#ddd; top:10px; font-size:10px;}</style></li>
-    <li><a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="cyclemon" style="width:88px">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-    </div>
-    </div>
+	<div id="share">
+		<a href="https://profile.luckyloottube.com/social" target="_blank" class="share-button">
+			<img alt="Partage" src="../images/share.png"/>
+			<span class="tooltip">Thanks!</span>
+		</a>
+	</div>
+	
+	<style>
+		#share {
+			position: fixed;
+			bottom: 20px;
+			left: 20px;
+		}
+		.share-button {
+			display: inline-block;
+			position: relative;
+		}
+		.share-button img {
+			width: 40px; /* Adjust this value to match your image size */
+			height: 40px; /* Adjust this value to match your image size */
+		}
+		.tooltip {
+			visibility: hidden;
+			width: 60px;
+			background-color: #555;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			position: absolute;
+			z-index: 1;
+			bottom: 125%;
+			left: 50%;
+			margin-left: -30px;
+			opacity: 0;
+			transition: opacity 0.3s;
+			font-size: 12px; /* Smaller font size for the tooltip */
+		}
+		.share-button:hover .tooltip {
+			visibility: visible;
+			opacity: 1;
+		}
+	</style>
 
 <div id="part1">
 <img alt="our teaser" src="images/teaser.png"/>
@@ -115,11 +149,35 @@ $('#know,#nav li a,#exp').click(function(){
 <div id="about">
 	<li id="tom"><a href="http://www.thomaspomarelle.com"><img alt="Thomas" src="images/faces.jpg"/></a><br/><img alt="tom" src="images/tom.jpg"/><p>Freelance illustrator and motion Designer, graduated from Paris' Decorative Arts school.</p><br/><a class="social"  href="http://www.thomaspomarelle.com"><img alt="Portfolio" src="images/social.png"/></a><a class="social" href="https://twitter.com/PomThomas"><img alt="twitter" src="images/social1.png"/></a><a class="social" href="http://dribbble.com/ThomasPomarelle"><img alt="dribbble" src="images/social2.png"/></a></li>
     <li id="rom"><a href="http://orthonormai.com/"> <img alt="Romain" src="images/faces2.jpg"/></a><br/><img alt="rom"  src="images/rom1.jpg"/><p>Interactive designer at OgivlyOne Paris, and graduated from Paris' Gobelins school.</p><br/><br/><a class="social" href="http://orthonormai.com"><img alt="Portfolio" src="images/social.png"/></a><a class="social" href="https://twitter.com/orthonormai"><img alt="Twitter" src="images/social1.png"/></a><a class="social" href="http://dribbble.com/normai"><img alt="dribbble" src="images/social2.png"/></a></li>
-</div>
-<div id="copyr">
-<p>© CYCLEMON 2013 — All rights reserved</p>
-</div>
-</div>
+	<div id="share">
+		<!-- Your share button code here -->
+	</div>
+	
+	<div id="copyr">
+		<p>LuckyLootTube / FREE Giveaways</p>
+	</div>
+	
+	<style>
+		#share {
+			position: fixed;
+			bottom: 27px;
+			left: 20px;
+			z-index: 10; /* Ensure the share button is above other elements */
+		}
+	
+		#copyr {
+			position: fixed;
+			bottom: 34px;
+			left: 70px; /* Adjust this value to move the text more to the right */
+			font-size: 12px; /* Adjust the font size as needed */
+			color: #666; /* Adjust the color as needed */
+		}
+	
+		#copyr p {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
 
 
 <script>

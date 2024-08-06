@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body, html{
+	margin: 0;
+	padding: 0;
+	height:100%;
+}
+
+img {
+	border:0;
+}
+
+#menu {
+	float:left;
+	position:fixed;
+	top:40px;
+	left:40px;
+	z-index:50;
+	
+}
+
+#menu img {
+	margin-right:30px;
+}
+
+#exp {
+	opacity:0.5;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+}
+
+#exp:hover {
+	opacity:1;
+}
+
+#shop {
+	opacity:0.5;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+}
+
+#shop:hover {
+	opacity:1;
+}
+
+#nav{
+	list-style: none;
+	position: fixed;
+	right: 44px;
+	z-index:50;
+	height:280px;
+	margin-top:40px;
+}
+
+#nav li{
+	margin: 0 0 10px;
+	height:10px;	
+}
+
+#nav li a{
+	opacity:0.2;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+	
+}
+
+#nav li a:hover{
+	opacity:1;
+	
+}
+
+#nom {
+		opacity:1;
+	right:20px;
+	position:absolute;
+}
+#nom li a{
+	opacity:1;
+	display:none;
+	float:right;
+	padding-top:4px;
+}
+
+
+#share {
+	float:left;
+	position:fixed;
+	z-index:50;
+	left:40px;
+	bottom:40px;
+}
+
+#share a {
+	opacity:0.6;
+		-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+}
+
+#share a:hover {
+	opacity:1;
+}
+	
+#content {
+	width:210px;
+	float:left;
+	position:absolute;
+	bottom: 0;
+	left: 39px;
+	height:41px;
+	z-index:50;
+	display:none;
+	list-style: none;
+	border-radius:0 3px 3px 0;
+	background-color: rgba(255,255,255,0.4);
+}
+
+#content li {
+	margin-top:10px;
+	margin-left:10px;
+	display:inline;
+	float:left;
+	width:95px;
+	
+}
+
+#content li a{
+	width:88px;
+}
+
+
+/* parties */
+
+#part1 {
+	background-color:rgb(255, 210, 161);
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	}
+	
+#part1 iframe {
+	background-color:#003;
+	width:650px;
+	height:366px;
+	position:relative;
+	top:50%;
+	margin-top: -150px;
+	left:50%;
+	margin-left: -325px;
+	box-shadow: 0 0 5px #333333;
+}
+
+#part1 img {
+	position:absolute;
+	width:216px;
+	left:50%;
+	margin-left:-108px;
+	top:14%;	
+}
+	
+#part2 {
+	background-color:rgb(189, 248, 239);
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	}
+	
+#infos {
+	width:920px;
+	height:470px;
+	float:left;
+	position:relative;
+	display:table;
+	left: 50%;
+	top:50%;
+	margin-left: -460px;
+	margin-top:-235px;
+	
+}
+
+#gauche {
+	width:285px;
+	margin-top:100px;
+	float:left;
+	text-align:center;
+	
+}
+
+#gauche p {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:11px;	
+	color:#3f3f3f;
+	opacity:0.8;
+	line-height:20px;
+	
+}
+
+#gauche p a {
+	color:rgb(235, 93, 80);
+}
+
+#gauche p a:link {
+	text-decoration:none;
+	opacity:1;
+	color:rgb(235, 93, 80);
+}
+	
+#gauche p a:hover {
+	text-decoration:underline;
+	color:rgb(235, 93, 80);
+
+	
+}
+
+
+#droite {
+	width:581px;
+	margin-top:15px;
+	float:right;
+		height:422px;
+
+}
+
+.container {
+	margin-left:30px;
+	width:580px;
+	height:422px;
+}
+
+#slides {
+}
+
+#precedent {
+	float:left;
+	margin-top:200px;
+	margin-left:5px;
+	position:absolute;
+	z-index:20;
+	
+}
+
+#suivant {
+	float:right;
+	margin-top:200px;
+	margin-left:542px;
+	position:absolute;
+	z-index:20;
+}
+
+#part3 {
+	background-color:#a3efc9;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	}
+
+#part3 #titre {
+	position:absolute;
+	width:216px;
+	left:50%;
+	margin-left:-108px;
+	top:11%;	
+}
+
+#about {
+	position:absolute;
+	top:50%;
+	margin-top:-170px;
+	left:50%;
+	margin-left:-279px;
+	
+}
+
+#part3 li {
+	list-style-type:none;
+	text-align:center;
+	height:341px;
+	width:234px;
+	float:left;
+	margin-right:90px;
+	opacity:0.7;
+}
+
+#part3 li img {
+	margin-bottom:40px;
+}
+
+#part3 li p {
+	font-family:"Lucida Grande", sans-serif;
+	font-size:11px;	
+	color:#3f3f3f;
+	opacity:1;
+	line-height:20px;
+	margin-top:-15px;
+}
+
+.social {
+	margin-right:7px;
+	margin-left:7px;
+	opacity:0.4;
+		-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+}
+
+.social:hover {
+	opacity:1;
+}
+
+#copyr {
+	left:40px;
+	z-index:0;
+	position:fixed;
+	float:left;
+	bottom:6px;
+	font-family:"Lucida Grande", sans-serif;
+	font-size:9.5px;
+	color:#ffffff;
+	font-weight:100;
+}

@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; url=https://luckyloottube.me">
-  <script>
-    window.location.href = "https://luckyloottube.me" + window.location.pathname.replace("/index.html", "");
-  </script>
+    <script>
+    var path = window.location.pathname;
+    if (path.endsWith('index.html')) {
+        // Handle root index.html and events/index.html
+        path = path.replace(/\/index\.html$/, '/');
+    } else if (path.includes('/about/knowm.html')) {
+        // Handle knowm/knowm.html
+        path = path.replace('/about/knowm.html', '/about/');
+    } else if (!path.endsWith('/') && !path.includes('.')) {
+        // Add trailing slash to paths without file extensions
+        path += '/';
+    }
+    window.location.replace("https://luckyloottube.me" + path);
+    </script>
 </head>
 <body>
-  <p>Redirecting...</p>
+    <p>Page not found. Redirecting...</p>
 </body>
 </html>

@@ -54,9 +54,9 @@ a {
 h1, h2 { margin: 0; }
 
 h1 {
-	font-size: 80px;
+	font-size: 100px;
 	font-weight: 1000;
-	line-height: 80px;
+	line-height: 100px;
 	letter-spacing: -0.08em;
 	color: #0a1236; 
 }
@@ -72,10 +72,10 @@ h2 {
 
 #countdown div span {
 	display:block;
-	font-size: 80px;
-	line-height: 80px;
+	font-size: 100px;
+	line-height: 100px;
 	letter-spacing: initial;
-	font-weight: 800;
+	font-weight: 1200;
 	text-transform: uppercase;
 }
 

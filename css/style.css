@@ -55,7 +55,7 @@ h1, h2 { margin: 0; }
 
 h1 {
 	font-size: 80px;
-	font-weight: 800;
+	font-weight: 1000;
 	line-height: 80px;
 	letter-spacing: -0.08em;
 	color: #0a1236; 
@@ -63,7 +63,7 @@ h1 {
 
 h2 {
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 800;
 	line-height: 1em;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
@@ -85,7 +85,7 @@ h2 {
 }
 
 .sub-title {
-	font-size: 18px;
+	font-size: 28px;
 	margin-top: 5px;
 	margin-bottom: 0px;
 	color:#0a1236;

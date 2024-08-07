@@ -34,15 +34,15 @@ img {
 
 body {
 	background: #fff;
-	color: #666666;
+	color: #0a1236;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
 }
 
 section { overflow: hidden; }
-::selection { background: #161a1b; color: #fff; }
-::-moz-selection { background: #161a1b; color: #fff; }
+::selection { background: #f5efbf; color: #0a1236; }
+::-moz-selection { background: #f5efbf; color: #0a1236; }
 
 
 /* =Typography
@@ -63,7 +63,7 @@ h1 {
 
 h2 {
 	font-size: 18px;
-	font-weight: 800;
+	font-weight: 300;
 	line-height: 1em;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
@@ -167,7 +167,7 @@ h2 {
 .line {
 	display: block;
 	margin: 0 auto;
-	width: 60px;
+	width: 180px;
 	height: 3px;
 	background: #ebbc3c;
 	margin-top: 10px;
@@ -233,7 +233,7 @@ h2 {
 	margin-left: -60px;
 	margin-top: 10px;
 	height: 1px;
-	background: #666666;
+	background: #0a1236;
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -1003,7 +1003,7 @@ h2 {
 	line-height: 1em;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
-	color: #161a1b;
+	color: #0a1236;
 	background: transparent;
 	border: 1px solid rgb(23,26,28);
 	border: 1px solid rgba(23,26,28,.3);

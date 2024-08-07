@@ -1,10 +1,6 @@
 /*
-Imminent - Coming Soon Template by Themewagon
-Version: 1.0
-Author: ThemeWagon
-Author URI: http://www.themewagon.com
-*/
 
+From LuckyLootTube with love <3
 
 /* =Common Styles
 -------------------------------------------------------------- */
@@ -62,7 +58,7 @@ h1 {
 	font-weight: 800;
 	line-height: 80px;
 	letter-spacing: -0.08em;
-	color: #161a1b; 
+	color: #0a1236; 
 }
 
 h2 {
@@ -71,7 +67,7 @@ h2 {
 	line-height: 1em;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
-	color: #161a1b;
+	color: #0a1236;
 }
 
 #countdown div span {
@@ -92,6 +88,7 @@ h2 {
 	font-size: 18px;
 	margin-top: 5px;
 	margin-bottom: 0px;
+	color:#0a1236;
 }
 
 
@@ -171,8 +168,8 @@ h2 {
 	display: block;
 	margin: 0 auto;
 	width: 60px;
-	height: 1px;
-	background: #00d9ec;
+	height: 3px;
+	background: #ebbc3c;
 	margin-top: 10px;
 }
 
